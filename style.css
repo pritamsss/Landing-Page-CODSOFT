@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 70px;
+    color: black;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 70px;
+    margin-top: -8px;
+    color: black;
+}
+
+h4 {
+    font-size: 25px;
+   
+    color: black;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+    margin : 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin:40px 0;
+}
+button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(243, 239, 239);
+    background-color: rgb(6, 6, 6);    
+    box-shadow:10px 10px 30px rgb(23, 23, 23);
+    outline: none;
+    transition: none;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(243, 239, 239);
+    background-color: rgb(3, 141, 125);
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0.5px solid rgb(14, 15, 14);
+    box-shadow:10px 10px 30px rgb(23, 23, 23);
+    outline: none;
+    transition: 0.2s;
+}
+
+button.White {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: rgb(243, 239, 239);
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(251, 251, 251);
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header Start*/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgb(210, 229, 244);
+    box-shadow: black;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(93, 89, 89);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(1, 124, 124);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color:rgb(1, 134, 127);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/*Home page*/
+#hero{
+    background-image: url("style4.avif");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position:top 8% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: rgb(1, 123, 101);
+}
+
+#hero button{
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background:rgb(3, 140, 122);
+    border-radius: 4rem;
+    font-size: 1rem;
+    color: rgb(246, 245, 245);
+    box-shadow: 10px 10px 30px rgb(99, 96, 96);
+    letter-spacing:0.1rem;
+    font-weight: 800;
+    transition: 0.5s ease;
+    margin-top: 5px;
+    border: 2px solid rgb(12, 12, 12);
+}
+#hero button:hover{
+    background: rgb(251, 248, 248);
+    color: rgb(12, 12, 12);
+}
